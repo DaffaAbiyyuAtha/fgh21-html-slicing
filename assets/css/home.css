@@ -21,7 +21,7 @@ span {
 .span2 {
   color: #ff3d71;
 }
-.navbar {
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,10 +36,18 @@ span {
   font-weight: bold;
   font-size: 14px;
 }
-
+.btn {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
 .navbar .menu .active {
   color: #3366ff;
   border-bottom: 2px solid #3366ff;
+}
+.detail-logo {
+  display: flex;
+  align-items: center;
 }
 .button-navbar {
   display: flex;
@@ -67,6 +75,52 @@ span {
   padding-right: 55px;
   font-size: 14px;
   letter-spacing: 1px;
+}
+@media (max-width: 992px) {
+  nav {
+    display: unset !important;
+    flex-direction: column;
+  }
+  nav .logo {
+    margin-top: -10px;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .detail-logo {
+    display: flex;
+    align-items: center;
+  }
+  .btn {
+    display: unset;
+  }
+  .menu {
+    display: unset;
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu > div {
+    margin-bottom: 5px;
+    display: none;
+  }
+  .menu .active {
+    color: #3366ff;
+  }
+  .button-navbar {
+    display: unset !important;
+    width: 100%;
+  }
+  .button-navbar > div {
+    display: none;
+  }
+  .button-left {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .button-right {
+    width: 100%;
+  }
 }
 .banner {
   background: url(/assets/img/banner.jpg);
@@ -136,10 +190,11 @@ span {
   padding: 10px;
 }
 .event {
-  margin-left: 30%;
+  margin-left: 120px;
   margin-bottom: 50px;
   display: flex;
   gap: 30px;
+  overflow-x: scroll;
 }
 .event-box {
   background-color: aqua;
@@ -147,6 +202,7 @@ span {
   width: 260px;
   border-radius: 25px;
   display: flex;
+  flex-shrink: 0;
 }
 .box-detail {
   background-image: url(/assets/img/event_1.svg);
@@ -238,6 +294,7 @@ span {
   width: 260px;
   border-radius: 25px;
   display: flex;
+  flex-shrink: 0;
 }
 .box-detail2 {
   background-image: url(/assets/img/event_2.svg);
