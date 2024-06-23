@@ -22,9 +22,12 @@ body {
   background-color: #f4f7ff;
 }
 
-.navbar .menu .active {
+.menu .active a {
   color: #3366ff;
   border-bottom: 2px solid #3366ff;
+}
+a {
+  text-decoration: none;
 }
 .menu {
   display: flex;

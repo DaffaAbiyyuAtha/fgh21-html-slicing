@@ -41,7 +41,8 @@ nav {
   background-color: transparent;
   display: none;
 }
-.navbar .menu .active {
+
+.menu .active a {
   color: #3366ff;
   border-bottom: 2px solid #3366ff;
 }
@@ -94,24 +95,23 @@ nav {
   .btn {
     display: unset;
   }
+  .detail-toggle {
+    display: unset !important;
+  }
   .menu {
-    display: unset;
+    display: none;
     flex-direction: column;
     text-align: center;
   }
   .menu > div {
     margin-bottom: 5px;
-    display: none;
   }
   .menu .active {
     color: #3366ff;
   }
   .button-navbar {
-    display: unset !important;
-    width: 100%;
-  }
-  .button-navbar > div {
     display: none;
+    width: 100%;
   }
   .button-left {
     width: 100%;
@@ -120,6 +120,62 @@ nav {
   }
   .button-right {
     width: 100%;
+  }
+  .arrow-hp {
+    display: unset !important;
+  }
+  .arrow-calendar {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 45px;
+    margin-bottom: 40px;
+  }
+  .date .arrow-left {
+    display: none;
+  }
+  .date .arrow-right {
+    display: none;
+  }
+  .content-discover {
+    display: unset !important;
+  }
+  .event-blue1 {
+    margin-left: 43px;
+  }
+  .event-text-blue {
+    font-size: 24px !important;
+  }
+  .background-blue {
+    width: 315px !important;
+  }
+  .event-blue3 {
+    display: none !important;
+  }
+  .event-blue2 div:nth-child(3) {
+    display: none;
+  }
+  .event-blue2 {
+    align-items: center;
+    flex-direction: column !important;
+    gap: 30px !important;
+    margin-bottom: 40px;
+  }
+  .event-black {
+    font-size: 24;
+  }
+  .sub-event {
+    overflow-x: scroll;
+  }
+  .sub-event-content {
+    flex-shrink: 0;
+  }
+  .sub-arrow-left {
+    display: none;
+  }
+  .sub-arrow-right {
+    display: none !important;
   }
 }
 .banner {
@@ -149,7 +205,7 @@ nav {
   align-items: center;
   font-size: 12px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   padding-left: 30px;
   padding-right: 30px;
   justify-content: center;
@@ -195,6 +251,9 @@ nav {
   display: flex;
   gap: 30px;
   overflow-x: scroll;
+}
+a {
+  text-decoration: none;
 }
 .event-box {
   background-color: aqua;
@@ -256,6 +315,9 @@ nav {
   border-radius: 10px;
   align-items: center;
   align-content: center;
+}
+.arrow-hp {
+  display: none;
 }
 .profile-avatar {
   display: flex;

@@ -32,6 +32,10 @@ body {
   font-weight: bold;
   font-size: 14px;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -139,6 +143,12 @@ body {
 option {
   display: flex;
   flex-direction: column;
+}
+.none-underline {
+  text-decoration: none;
+  font-size: 14;
+  font-weight: bold;
+  color: black;
 }
 .type-blue {
   font-size: 14;

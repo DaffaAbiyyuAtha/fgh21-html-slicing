@@ -32,6 +32,10 @@ body {
   font-weight: bold;
   font-size: 14px;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -50,7 +54,6 @@ body {
 .profile-name {
   font-weight: bold;
 }
-/* batas nav */
 .sub-content {
   display: flex;
 }
@@ -108,6 +111,12 @@ body {
   flex-direction: column;
   gap: 31px;
   letter-spacing: 1px;
+}
+.none-underline {
+  text-decoration: none;
+  font-size: 14;
+  font-weight: bold;
+  color: black;
 }
 .type {
   font-size: 14;
