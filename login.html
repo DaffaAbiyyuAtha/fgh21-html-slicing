@@ -21,13 +21,29 @@
           </div>
           <div class="title-text">Sign in</div>
           <div class="sub-title">Hi, Welcome back to Urticket!</div>
-          <input type="text" placeholder="Full Name" class="input-form" />
-          <input type="email" placeholder="Email" class="input-form" />
-          <input type="password" placeholder="Password " class="input-form" />
-          <div class="text-blue">Forgot Password?</div>
-          <a href="index.html">
+          <form action="" method="post" onsubmit="reqLogin(event)">
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="login"
+              class="input-form"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              class="input-form"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              class="input-form"
+            />
+            <div class="text-blue">Forgot Password?</div>
             <button type="submit">Sign in</button>
-          </a>
+          </form>
+          <script src="assets/js/login.js"></script>
           <div class="sign-in">
             <div class="text-sign-in">or sign in with</div>
             <div class="logo-sign-in">
