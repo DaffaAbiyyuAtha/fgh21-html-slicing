@@ -38,6 +38,7 @@
         </div>
       </div>
     </nav>
+    <script src="/assets/js/home.js"></script>
     <div class="content">
       <div class="banner"></div>
     </div>
@@ -715,23 +716,5 @@
         <div class="copyright">&copy; 2020 Wetick All Rights Reserved</div>
       </div>
     </footer>
-    <script>
-      const nav = document.getElementById("nav");
-      const menu = document.getElementById("btn-toggle");
-      const menulist = nav.getElementsByClassName("menu").item(0);
-      const buttonnav = nav.getElementsByClassName("button-navbar").item(0);
-      menu.onclick = () => {
-        if (menulist.getAttribute("style")){
-          menulist.removeAttribute("style")
-        }else {
-          menulist.setAttribute("style", "display: unset !important")
-        }
-        if (buttonnav.getAttribute("style")){
-          buttonnav.removeAttribute("style")
-        }else{
-          buttonnav.setAttribute("style", "display: unset !important")
-        }
-      };
-    </script>
   </body>
 </html>
