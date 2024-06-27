@@ -6,19 +6,23 @@
     <link rel="stylesheet" href="/assets/css/ticket.css" />
   </head>
   <body>
-    <div class="navbar">
+    <div class="navbar" id="nav">
       <div class="logo">
+        <div class="flex-logo">
         <a href="index.html">
           <img src="assets/img/logo_1.svg" alt="" class="logo1" />
         </a>
         <span class="span1">We</span><span class="span2">Tick</span>
+        </div>
+      <div class="logo-list"><button class="list-button" id="btn"><img src="./assets/img/toggle-menu.svg" alt=""></button>
+      </div>   
       </div>
-      <div class="menu">
+      <div class="menu" id="menu">
         <div class="active"><a href="index.html">Home</div></a>
-        <div>Create Event</div>
-        <div>Location</div>
+        <div><a href="create-event.html">Create Event</a></div>
+        <div><a href="index.html#location">Location</a></div>
       </div>
-      <div class="profile">
+      <div class="profile" id="profile">
         <div>
           <a href="profile.html">
             <img src="/assets/img/profile.svg" alt="" />
@@ -149,6 +153,11 @@
         </div>
       </div>
     </div>
+    <div class="ticket-hp">
+      <div class="img-hp">
+        <div class="map-ticket"></div>
+      </div>
+    </div>
     <div class="footer">
       <div class="footer-content">
         <div class="part">
@@ -201,4 +210,5 @@
       </div>
     </div>
   </body>
+  <script src="/assets/js/ticket.js"></script>
 </html>
