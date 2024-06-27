@@ -65,6 +65,9 @@ Array.from(events).forEach((event) => {
     picture.appendChild(pict);
     profileAvatar.appendChild(picture);
   });
+  event.onclick = () => {
+    window.location.href = "event.html";
+  };
 });
 
 // event 2
@@ -114,6 +117,9 @@ Array.from(events2).forEach((event2) => {
     picture2.appendChild(pict2);
     profileAvatar2.appendChild(picture2);
   });
+  event2.onclick = () => {
+    window.location.href = "event.html";
+  };
 });
 
 // footer
