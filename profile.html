@@ -5,20 +5,24 @@
     <title>Profile</title>
     <link rel="stylesheet" href="/assets/css/profile.css" />
   </head>
-  <body>
-    <div class="navbar">
+  <body> 
+    <div class="navbar" id="nav">
       <div class="logo">
-        <a href="index.html">
-          <img src="assets/img/logo_1.svg" alt="" class="logo1" />
-        </a>
-        <span class="span1">We</span><span class="span2">Tick</span>
+        <div class="flex-logo">
+          <a href="index.html">
+            <img src="assets/img/logo_1.svg" alt="" class="logo1" />
+          </a>
+          <span class="span1">We</span><span class="span2">Tick</span>
+        </div>
+      <div class="logo-list"><button class="list-button" id="btn"><img src="./assets/img/toggle-menu.svg" alt=""></button>
+      </div>   
       </div>
-      <div class="menu">
+      <div class="menu" id="menu">
         <div><a href="index.html">Home</div></a>
         <div><a href="create-event.html">Create Event</a></div>
         <div><a href="index.html#location">Location</a></div>
       </div>
-      <div class="profile">
+      <div class="profile" id="profile">
         <div>
           <a href="profile.html">
             <img src="/assets/img/profile.svg" alt="" />
@@ -91,7 +95,8 @@
                   <div class="type">My Booking</div>
                 </div>
               </a>
-              <div class="sub-content-menu">
+              <a href="my-list.html">
+                <div class="sub-content-menu">
                 <div class="profile-img">
                   <img
                     src="/assets/img/profile-list.svg"
@@ -101,6 +106,7 @@
                 </div>
                 <div class="type">My Wishlist</div>
               </div>
+              </a>
               <div class="sub-content-menu">
                 <div class="profile-img">
                   <img
@@ -203,7 +209,7 @@
                       <td>24 / 10 / 2000 <u>Edit</u></td>
                     </tr>
                   </table>
-                  <div class="btn"><button>Save</button></div>
+                  <div class="btn"><button id="button">Save</button></div>
                 </form>
               </div>
             </div>
@@ -214,7 +220,7 @@
                     <img src="/assets/img/form-profile.svg" alt="" />
                   </div>
                   <div class="button-photo">
-                    <button type="button" class="button-blue">
+                    <button type="button" class="button-blue" id="button-img">
                       Choose Photo
                     </button>
                   </div>
@@ -223,6 +229,128 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-hp">
+      <div class="container">
+        <div class="title-hp">
+          Profile
+        </div>
+        <div class="profile-hp">
+          <img src="/assets/img/profile.svg" alt="" id="profile-hp">
+        </div>
+        <div class="form-hp">
+          <div class="name-hp">
+            <div class="form-name-hp1">
+              Name
+            </div>
+            <div class="input-name-hp">
+              <input type="text" name="name" id="input-name-hp" placeholder="Jhon Tomson">
+            </div>
+          </div>
+          <div class="user-hp">
+            <div class="form-name-hp2">
+              Username
+            </div>
+            <div class="name-edit-hp">
+              <div class="input-edit-hp">
+                @jhont0
+              </div>
+              <div class="blue-edit-hp">
+                Edit
+              </div>
+            </div>
+          </div>
+          <div class="user-hp">
+            <div class="form-name-hp2">
+              Email
+            </div>
+            <div class="name-edit-hp">
+              <div class="input-edit-hp">
+                jhont0@mail.com
+              </div>
+              <div class="blue-edit-hp">
+                Edit
+              </div>
+            </div>
+          </div>
+          <div class="user-hp">
+            <div class="form-name-hp2">
+              Phone
+            </div>
+            <div class="name-edit-hp">
+              <div class="input-edit-hp">
+                081234567890
+              </div>
+              <div class="blue-edit-hp">
+                Edit
+              </div>
+            </div>
+          </div>
+          <div class="user-hp">
+            <div class="form-name-hp2">
+              Gender
+            </div>
+            <div class="name-edit-hp">
+              <div class="choose-gender">
+                <div class="choose-male">
+                  <input type="radio" name="gender" id=""> Male
+                </div>
+                <div class="choose-female">
+                  <input type="radio" name="gender" id=""> Female
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="name-hp">
+            <div class="form-name-hp1">
+              Profession
+            </div>
+            <div class="input-name-hp">
+              <input type="text" name="name" id="input-name-hp" placeholder="Entrepreneur">
+            </div>
+          </div>
+          <div class="name-hp">
+            <div class="form-name-hp1">
+              Nationality
+            </div>
+            <div class="input-name-hp">
+              <input type="text" name="name" id="input-name-hp" placeholder="Indonesia">
+            </div>
+          </div>
+          <div class="user-hp">
+            <div class="form-name-hp2">
+              Username
+            </div>
+            <div class="name-edit-hp">
+              <div class="input-edit-hp">
+                <div class="edit-date-hp">
+                  <div class="day-hp">
+                    24
+                  </div>
+                  <div class="line-date">
+                    /
+                  </div>
+                  <div class="day-hp">
+                    10
+                  </div>
+                  <div class="line-date">
+                    /
+                  </div>
+                  <div class="day-hp">
+                    2000
+                  </div>
+                </div>
+              </div>
+              <div class="blue-edit-hp">
+                Edit
+              </div>
+            </div>
+          </div>
+          <div class="button-hp">
+            <button type="button" id="button-hp">Save</button>
           </div>
         </div>
       </div>
@@ -278,5 +406,7 @@
         <div class="copyright">&copy; 2020 Wetick All Rights Reserved</div>
       </div>
     </div>
+    <script src="/assets/js/profile.js">
+    </script>
   </body>
 </html>

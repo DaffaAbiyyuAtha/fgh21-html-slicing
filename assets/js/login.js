@@ -18,3 +18,24 @@ function reqLogin(event) {
     window.alert("you must fill the form");
   }
 }
+const form2 = document.getElementById("form2");
+form2.addEventListener("submit", () => {
+  e.preventDefault();
+  const loginHp = e.target.namehp.value;
+  const emailHp = e.target.emailhp.value;
+  const passwordHp = e.target.passwordhp.value;
+  if (loginHp !== "") {
+    if (emailHp !== "") {
+      if (passwordHp !== "") {
+        window.location.href = "index.html";
+        window.alert("Congratulations, you have successfully logged in");
+      } else {
+        window.alert("you must fill the form");
+      }
+    } else {
+      window.alert("you must fill the form");
+    }
+  } else {
+    window.alert("you must fill the form");
+  }
+});

@@ -236,7 +236,6 @@ a {
   margin-left: 120px;
   margin-right: 120px;
   justify-content: center;
-  gap: 88px;
   background-color: white;
   border-radius: 30px;
 }
@@ -340,6 +339,7 @@ a {
   box-sizing: border-box;
   margin-top: 104px;
   width: 50%;
+  padding-right: 88px;
 }
 .detail-img {
   background: url(/assets/img/event_1.svg);

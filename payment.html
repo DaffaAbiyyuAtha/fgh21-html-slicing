@@ -1,22 +1,26 @@
 <html>
   <head>
     <title>Payment</title>
-    <link rel="stylesheet" href="./assets/css/payment.css" />
+    <link rel="stylesheet" href="/assets/css/payment.css" />
   </head>
   <body>
-    <div class="navbar">
+    <div class="navbar" id="nav">
       <div class="logo">
+        <div class="flex-logo">
         <a href="index.html">
           <img src="assets/img/logo_1.svg" alt="" class="logo1" />
         </a>
         <span class="span1">We</span><span class="span2">Tick</span>
+        </div>
+      <div class="logo-list"><button class="list-button" id="btn"><img src="./assets/img/toggle-menu.svg" alt=""></button>
+      </div>   
       </div>
-      <div class="menu">
+      <div class="menu" id="menu">
         <div class="active"><a href="index.html">Home</div></a>
         <div><a href="create-event.html">Create Event</a></div>
         <div><a href="index.html#location">Location</a></div>
       </div>
-      <div class="profile">
+      <div class="profile" id="profile">
         <div>
           <a href="profile.html">
             <img src="/assets/img/profile.svg" alt="" />
@@ -25,87 +29,133 @@
         <div class="profile-name">jhon Tomson</div>
       </div>
     </div>
-    <div class="payment">
-      <div class="left">
+    <div class="container">
+      <div class="payment">
+        <div class="left">
+          <h2>Payment Method</h2>
+          <form>
+            <div class="method">
+              <input type="radio" id="card1" name="payment-method" checked>
+              <label for="card1" class="label1"><img src="/assets/img/card.svg" class="logo-payment"></label>
+              <div class="space">
+                <label for="card1">Card</label>
+                <button for="card" class="up"><img src="/assets/img/arrow-up.svg" alt=""></button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="detail-img">
+                <img src="/assets/img/card1.svg">
+              </div>
+              <button><img src="/assets/img/plus.svg"></button>
+            </div>
+            <div class="method">
+              <input type="radio" id="card2" name="payment-method" checked>
+              <label for="card2" class="label2"><img src="/assets/img/bank.svg"></label>
+              <div class="space">
+                <label for="card2">Bank Transfer</label>
+                <button class="down"><img src="/assets/img/arrow-down.svg" =></button>
+              </div>
+            </div>
+            <div class="method">
+              <input type="radio" id="card3" name="payment-method" checked>
+              <label for="card3" class="label3"><img src="/assets/img/retail.svg"></label>
+              <div class="space">
+                <label for="card3">Retail</label>
+                <button for="card1" class="down"><img src="/assets/img/arrow-down.svg" alt=""></button>
+              </div>
+            </div>
+            <div class="method">  
+              <input type="radio" id="card4" name="payment-method" checked>
+              <label for="card4" class="label4"><img src="/assets/img/emoney.svg"></label> 
+              <div class="space">
+                <label for="card4">E-Money</label>
+                <button for="card" class="down"><img src="/assets/img/arrow-down.svg" alt=""></button>
+              </div>
+            </div>
+          </form>
+        </div> 
+        <div class="right">
+          <div class="ticket">
+            <h2>Ticket Detail</h2>
+            <div class="ticket-detail">
+              <div class="ticket-text">
+                  <span class="label">Event</span>
+                  <span class="value">Sight % Sound Exhibition</span>
+              </div>
+              <div class="ticket-text">
+                  <span class="label">Ticket Section</span>
+                  <span class="value">Vip</span>
+              </div>
+              <div class="ticket-text">
+                  <span class="label">Quantity</span>
+                  <span class="value">2</span>
+              </div>
+              <div class="ticket-text1">
+                  <span class="label">Total Payment</span>
+                  <span class="value">$70</span>
+              </div> 
+              <button class="payment-btn">Payment</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-hp">
+      <div class="left-hp">
         <h2>Payment Method</h2>
         <form>
           <div class="method">
-            <input type="radio" id="card" name="payment-method" checked />
-            <label for="card" class="label1"
-              ><img src="./assets/img/card.svg" class="logo-payment"
-            /></label>
+            <input type="radio" id="card1" name="payment-method" checked>
+            <label for="card1" class="label1"><img src="/assets/img/card.svg" class="logo-payment"></label>
             <div class="space">
-              <div>Card</div>
-              <button for="card" class="up">
-                <img src="./assets/img/arrowup.svg" alt="" />
-              </button>
+              <label for="card1">Card</label>
+              <button for="card" class="up"><img src="/assets/img/arrow-up.svg" alt=""></button>
             </div>
           </div>
           <div class="card">
-            <img src="./assets/img/card1.svg" />
-            <button><img src="./assets/img/plus.svg" /></button>
+            <div class="detail-img">
+              <img src="/assets/img/card1.svg">
+            </div>
+            <button><img src="/assets/img/plus.svg"></button>
           </div>
           <div class="method">
-            <input type="radio" id="card" name="payment-method" checked />
-            <label for="card" class="label2"
-              ><img src="./assets/img/bank.svg"
-            /></label>
+            <input type="radio" id="card2" name="payment-method" checked>
+            <label for="card2" class="label2"><img src="/assets/img/bank.svg"></label>
             <div class="space">
-              <div>Bank Transfer</div>
-              <button for="card" class="down">
-                <img src="./assets/img/arrowdown.svg" alt="" />
-              </button>
+              <label for="card2">Bank Transfer</label>
+              <button class="down"><img src="/assets/img/arrow-down.svg" =></button>
             </div>
           </div>
           <div class="method">
-            <input type="radio" id="card" name="payment-method" checked />
-            <label for="card" class="label3"
-              ><img src="./assets/img/retail.svg"
-            /></label>
+            <input type="radio" id="card3" name="payment-method" checked>
+            <label for="card3" class="label3"><img src="/assets/img/retail.svg"></label>
             <div class="space">
-              <div>Retail</div>
-              <button for="card" class="down">
-                <img src="./assets/img/arrowdown.svg" alt="" />
-              </button>
+              <label for="card3">Retail</label>
+              <button for="card1" class="down"><img src="/assets/img/arrow-down.svg" alt=""></button>
             </div>
           </div>
-          <div class="method">
-            <input type="radio" id="card" name="payment-method" checked />
-            <label for="card" class="label4"
-              ><img src="./assets/img/emoney.svg"
-            /></label>
+          <div class="method">  
+            <input type="radio" id="card4" name="payment-method" checked>
+            <label for="card4" class="label4"><img src="/assets/img/emoney.svg"></label> 
             <div class="space">
-              <div>E-Money</div>
-              <button for="card" class="down">
-                <img src="./assets/img/arrowdown.svg" alt="" />
-              </button>
+              <label for="card4">E-Money</label>
+              <button for="card" class="down"><img src="/assets/img/arrow-down.svg" alt=""></button>
+            </div>
+          </div>
+          <div class="pay-hp">
+            <div class="detail-pay">
+              <div class="name-total">
+                Total Payment
+              </div>
+              <div class="total-payment">
+                $70
+              </div>
+            </div>
+            <div class="button-hp">
+              <button type="button" id="btn-hp">Payment</button>
             </div>
           </div>
         </form>
-      </div>
-      <div class="right">
-        <div class="ticket">
-          <h2>Ticket Detail</h2>
-          <div class="ticket-detail">
-            <div class="ticket-text">
-              <span class="label">Event</span>
-              <span class="value">Sight % Sound Exhibition</span>
-            </div>
-            <div class="ticket-text">
-              <span class="label">Ticket Section</span>
-              <span class="value">Vip</span>
-            </div>
-            <div class="ticket-text">
-              <span class="label">Quantity</span>
-              <span class="value">2</span>
-            </div>
-            <div class="ticket-text">
-              <span class="label">Total Payment</span>
-              <span class="value">$70</span>
-            </div>
-            <button class="payment-btn">Payment</button>
-          </div>
-        </div>
       </div>
     </div>
     <div class="footer">
@@ -113,22 +163,22 @@
         <div class="part">
           <div class="part1">
             <div class="footer-logo">
-              <img src="assets/img/logo_1.svg" alt="" class="logo1" />
+              <img src="./asset/img/logo_1.svg" alt="" class="logo1" />
               <span class="span1">We</span><span class="span2">Tick</span>
             </div>
             <div class="text-logo">Find events you love with our</div>
             <div class="sosmed">
               <div class="facebbok">
-                <img src="/assets/img/footer-fb.svg" alt="" />
+                <img src="./asset/img/footer-fb.svg" alt="" />
               </div>
               <div class="whatsapp">
-                <img src="/assets/img/footer-wa.svg" alt="" />
+                <img src="./asset/img/footer-wa.svg" alt="" />
               </div>
               <div class="instagram">
-                <img src="/assets/img/footer-ig.svg" alt="" />
+                <img src="./asset/img/footer-ig.svg" alt="" />
               </div>
               <div class="twitter">
-                <img src="/assets/img/footer-x.svg" alt="" />
+                <img src="./asset/img/footer-x.svg" alt="" />
               </div>
             </div>
           </div>
@@ -159,5 +209,7 @@
         <div class="copyright">&copy; 2020 Wetick All Rights Reserved</div>
       </div>
     </div>
+    <script src="/assets/js/payment.js">
+    </script>
   </body>
 </html>

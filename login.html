@@ -21,7 +21,12 @@
           </div>
           <div class="title-text">Sign in</div>
           <div class="sub-title">Hi, Welcome back to Urticket!</div>
-          <form action="" method="post" onsubmit="reqLogin(event)">
+          <form
+            action=""
+            method="post"
+            onsubmit="reqLogin(event)"
+            class="form-window"
+          >
             <input
               type="text"
               placeholder="Full Name"
@@ -41,9 +46,8 @@
               class="input-form"
             />
             <div class="text-blue">Forgot Password?</div>
-            <button type="submit">Sign in</button>
+            <button type="submit" id="button-window">Sign in</button>
           </form>
-          <script src="assets/js/login.js"></script>
           <div class="sign-in">
             <div class="text-sign-in">or sign in with</div>
             <div class="logo-sign-in">
@@ -60,6 +64,57 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="content-hp">
+      <div class="container-hp">
+        <div class="footer-logo">
+          <img src="assets/img/logo_1.svg" alt="" class="logo1" />
+          <span class="span1">We</span><span class="span2">Tick</span>
+        </div>
+        <div class="title-login-hp">Log In</div>
+        <div class="sub-title-hp">Hi, Welcome back to Urticket!</div>
+        <form id="form2">
+          <div class="input-hp">
+            <input
+              type="text"
+              name="namehp"
+              id="form-hp"
+              placeholder="Username"
+            />
+          </div>
+          <div class="input-hp">
+            <input
+              type="text"
+              name="emailhp"
+              id="form-hp"
+              placeholder="Email"
+            />
+          </div>
+          <div class="input-hp">
+            <input
+              type="text"
+              name="passwordhp"
+              id="form-hp"
+              placeholder="Password"
+            />
+          </div>
+          <div class="forgot-hp">Forgot Password?</div>
+          <div class="button-hp">
+            <div class="button-hp">
+              <button type="submit" id="button-hp">Log In</button>
+            </div>
+          </div>
+          <div class="or-hp">or sign in with</div>
+          <div class="choose-sosmed-hp">
+            <div class="google-hp">
+              <img src="/assets/img/google.svg" alt="" id="google-hp" />
+            </div>
+            <div class="fb-hp">
+              <img src="/assets/img/facebook.svg" alt="" />
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <div class="footer">
@@ -113,5 +168,6 @@
         <div class="copyright">&copy; 2020 Wetick All Rights Reserved</div>
       </div>
     </div>
+    <script src="/assets/js/login.js"></script>
   </body>
 </html>
